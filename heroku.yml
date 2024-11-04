@@ -1,6 +1,16 @@
 build:
+  # Specify the build environment
   docker:
-    web: Dockerfile  # The Dockerfile will define how to build your app
+    web: 
+      # Use a Node Docker image
+      image: node:16
+
+      # Run build commands
+      # Ensure we use npm instead of yarn for package installation
+      # and to run your build
+      command:
+        - npm install
+        - npm run build
 
 run:
-  web: npm start  # Command to start the app
+  web: npm start
