@@ -1,13 +1,11 @@
 build:
-  # Specify the build environment
+  # Specify the build environment with Node 20
   docker:
-    web: 
-      # Use a Node Docker image
-      image: node:16
+    web:
+      # Use Node 20 image
+      image: node:20
 
-      # Run build commands
-      # Ensure we use npm instead of yarn for package installation
-      # and to run your build
+      # Define build steps
       command:
         - npm install
         - npm run build
