@@ -10,7 +10,7 @@
   },
   "engines": {
   "node": "16.1.1"
-}
+},
   "scripts": {
     "start": "react-scripts start",
     "start:lambda": "netlify-lambda serve src/lambda",
